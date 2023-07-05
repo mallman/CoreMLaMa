@@ -25,6 +25,4 @@ Thanks to the authors of LaMa:
 [[Project page](https://advimman.github.io/lama-project/)] [[arXiv](https://arxiv.org/abs/2109.07161)] [[Supplementary](https://ashukha.com/projects/lama_21/lama_supmat_2021.pdf)] [[BibTeX](https://senya-ashukha.github.io/projects/lama_21/paper.txt)] [[Casual GAN Papers Summary](https://www.casualganpapers.com/large-masks-fourier-convolutions-inpainting/LaMa-explained.html)]
 
 
-CoreMLaMa uses the LaMa model and supporting code from [LaMa Cleaner](https://lama-cleaner-docs.vercel.app). LaMa Cleaner makes this project much simpler.
-
-
+CoreMLaMa uses the LaMa model and supporting code from [Lama Cleaner](https://github.com/Sanster/lama-cleaner). Lama Cleaner makes this project much simpler.
