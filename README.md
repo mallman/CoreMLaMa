@@ -1,6 +1,8 @@
 ## CoreMLaMa: LaMa for Core ML
 
-This repo contains a script for converting a [LaMa](https://advimman.github.io/lama-project/) (aka cute, fuzzy 🦙) model to Apple's Core ML model format.
+This repo contains a script for converting a [LaMa](https://advimman.github.io/lama-project/) (aka cute, fuzzy 🦙) model to Apple's Core ML model format. More specifically, it converts the implementation of LaMa from [Lama Cleaner](https://github.com/Sanster/lama-cleaner).
+
+This repo also includes a simple example of how to use the Core ML model for prediction. See [Sample](Sample).
 
 ### Conversion Instructions
 
@@ -16,13 +18,12 @@ This repo contains a script for converting a [LaMa](https://advimman.github.io/l
     python convert_lama.py
     ```
 
-This script will download and convert [Big LaMa](https://github.com/advimman/lama#models-options) to a Core ML package named `LaMa.mlpackage`.
+This script will download and convert [Big LaMa](https://github.com/advimman/lama#models-options) to a Core ML package named LaMa.mlpackage.
 
 ### Acknowledgements and Thanks
 
 Thanks to the authors of LaMa:
 
 [[Project page](https://advimman.github.io/lama-project/)] [[arXiv](https://arxiv.org/abs/2109.07161)] [[Supplementary](https://ashukha.com/projects/lama_21/lama_supmat_2021.pdf)] [[BibTeX](https://senya-ashukha.github.io/projects/lama_21/paper.txt)] [[Casual GAN Papers Summary](https://www.casualganpapers.com/large-masks-fourier-convolutions-inpainting/LaMa-explained.html)]
-
 
 CoreMLaMa uses the LaMa model and supporting code from [Lama Cleaner](https://github.com/Sanster/lama-cleaner). Lama Cleaner makes this project much simpler.
