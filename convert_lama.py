@@ -1,7 +1,7 @@
 import coremltools as ct
 import torch
 
-from lama_cleaner.model.lama import LaMa
+from iopaint.model.lama import LaMa
 from CoreMLaMa import CoreMLaMa
 
 model_manager = LaMa("cpu")
