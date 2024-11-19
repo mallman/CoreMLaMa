@@ -1,7 +1,7 @@
 import torch
 
 # A "wrapper" module around LaMa which handles some input/output
-# pre- and post-processing beyond CoreML's built-in capabilities
+# pre- and post-processing beyond the built-in capabilities of Core ML
 class CoreMLaMa(torch.nn.Module):
     def __init__(self, lama):
         super(CoreMLaMa, self).__init__()

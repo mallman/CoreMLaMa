@@ -22,7 +22,7 @@ jit_model = torch.jit.script(model)
 
 print("Converting model")
 # Note that ct.ImageType assumes an 8 bpp image, while LaMa
-# uses 32-bit FP math internally. Creating a CoreML model
+# uses 32-bit FP math internally. Creating a Core ML model
 # that can work with 32-bit FP image inputs is on the "To Do"
 # list
 coreml_model = ct.convert(

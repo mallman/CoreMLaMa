@@ -4,18 +4,12 @@ This repo contains a script for converting a [LaMa](https://advimman.github.io/l
 
 This repo also includes a simple example of how to use the Core ML model for prediction. See [Sample](Sample).
 
-### iOS Deployment Notes
-
-The Core ML model this script produces was designed for macOS deployments. It runs well on macOS, on the GPU. I have received several reports of unsuccessful attempts to run this model on iOS, especially with fp16 precision on the Neural Engine. Conversely, I have not received any reports of _successful_ deployments to iOS.
-
-It may very well be possible to run this model on iOS with some tuning in the conversion process. I simply have not attempted this. I would very much welcome a PR and give credit to anyone who is able to convert this model and run it with great results on iOS.
-
 ### Conversion Instructions
 
 1. Create a Conda environment for CoreMLaMa:
     ```sh
-    conda create -n coremllama python=3.10 # works with mamba, too
-    conda activate coremllama
+    conda create -n coremlama python=3.10 # works with mamba, too
+    conda activate coremlama
     pip install -r requirements.txt
     ```
 
@@ -25,6 +19,12 @@ It may very well be possible to run this model on iOS with some tuning in the co
     ```
 
 This script will download and convert [Big LaMa](https://github.com/advimman/lama#models-options) to a Core ML package named LaMa.mlpackage.
+
+### iOS Deployment Problems
+
+The Core ML model this script produces was designed for macOS deployments. It runs well on macOS, on the GPU. I have received several reports of unsuccessful attempts to run this model on iOS, especially with fp16 precision on the Neural Engine. Conversely, I have not received any reports of _successful_ deployments to iOS.
+
+It may very well be possible to run this model on iOS with some tuning in the conversion process. I simply have not attempted this. I would very much welcome a PR and give credit to anyone who is able to convert this model and run it with great results on iOS.
 
 ### Acknowledgements and Thanks
 
